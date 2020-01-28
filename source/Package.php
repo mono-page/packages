@@ -7,7 +7,6 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
 class Package implements PackageInterface
 {
     protected ContainerBuilder $container;
-    protected array $classes = [];
 
     public function __construct(ContainerBuilder $container)
     {
