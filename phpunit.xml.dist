@@ -1,0 +1,24 @@
+<phpunit bootstrap="vendor/autoload.php"
+         backupGlobals="false"
+         backupStaticAttributes="false"
+         colors="true"
+         verbose="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false"
+         cacheResultFile="./runtime">
+    <testsuite name="mono-page/package-boilerplate">
+        <directory>./</directory>
+    </testsuite>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">./source</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./runtime/coverage"/>
+        <log type="coverage-clover" target="./runtime/coverage/coverage.clover"/>
+    </logging>
+</phpunit>
