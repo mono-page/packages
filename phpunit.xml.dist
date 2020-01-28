@@ -9,7 +9,7 @@
          processIsolation="false"
          stopOnFailure="false"
          cacheResultFile="./runtime">
-    <testsuite name="mono-page/package-boilerplate">
+    <testsuite name="mono-page/packages">
         <directory>./</directory>
     </testsuite>
     <filter>
